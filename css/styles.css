@@ -1,0 +1,569 @@
+@charset "UTF-8";
+
+
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Roboto+Slab:wght@300&display=swap');
+:root {
+      --cor0: #A9302C;
+      --cor1: #4b7e8b;
+      --cor2: #333333;
+      --cor3: #C98343;
+      --cor4: #6C757D;
+      --cor5: #4C5b4C;
+      --primary-color: #333;
+      --secondary-color: #f9f9f9;
+
+      --fonte-experiencia: 'Libre Baskerville', serif;
+      --fonte-experiencia2:'Roboto Slab', serif;
+}
+/* Estilos básicos para responsividade e acessibilidade */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: #ffff;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+a :hover {
+  opacity: 0.7;
+}
+
+.logo {
+  font-size: 24px;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+}
+
+body {
+  /* font-family: Arial, sans-serif;*/
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  font-family: var(--fonte-experiencia2);
+  width: 100vw;
+  background: #fdf9f9;
+ scroll-behavior: smooth;
+}
+
+h1 {
+  font-family: var(--fonte-experiencia);
+
+  color: #4b7e8b;
+  font-size: 2rem;
+}
+
+nav {
+  position: fixed;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  background-color: #4b7e8b;
+
+  height: 8vh;
+}
+.nav-list li {
+  letter-spacing: 3px;
+  margin-left: 32px;
+}
+.nav-list {
+  list-style: none;
+  display: flex;
+}
+
+.mobile-menu div {
+  width: 32px;
+  height: 2px;
+  background: #fff;
+  margin: 8px;
+}
+
+.mobile-menu {
+  display: none;
+  cursor: pointer;
+}
+
+@media (max-width: 999px) {
+  body {
+    overflow-x: hidden;
+  }
+  .nav-list {
+    position: absolute;
+    top: 8vh;
+    right: 0;
+    width: 50vw;
+    height: 92vh;
+    background-color: #4b7e8b;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    transform: translateX(100%);
+  }
+  .nav-list li {
+    margin-left: 0;
+    opacity: 0;
+  }
+  .mobile-menu {
+    display: block;
+  }
+  .nav-list.active {
+    transform: translateX(0);
+  }
+}
+
+main {
+  background: url("../img/praia/header.jpg") no-repeat center center fixed;
+  background-size: cover;
+  height: 92vh;
+
+}
+main img {
+  opacity: 0.5;
+}
+/* pagina principal - topico experiencia*/
+div.experiencia {
+  display: flex;
+  justify-content: space-between;
+  margin-right: 70px;
+  /*display: block;*/
+}
+div.experiencia-imagem {
+  display: flex;
+  justify-content: space-around;
+  margin-right: 5px;
+  /*display: block;*/
+}
+
+div.caixa-experiencia {
+  width: 40vw;
+  height: 90vh;
+  margin-top: 30px;
+  margin-left: 70px;
+  margin-right: 10px;
+}
+div.reserva-whatsapp {
+  display: inline-flex;
+  margin-top: 50px;
+  
+}
+div.imagem-whatsapp {
+  width: 200px;
+  padding-right: 0px;
+  margin-right: -130px;
+}
+.color-whats {
+  color: #fff;
+}
+
+img.imagem-1-exp {
+  width: 25vw;
+  height: 50vh;
+  margin-top: 60px;
+  margin-right: 10px;
+}
+
+img.imagem-2-exp {
+  width: 25vw;
+  height: 50vh;
+}
+
+h2.h2-inicio {
+  font-family: var(--fonte-experiencia2);
+  color: var(--cor2);
+  font-size: 20px;
+}
+h1.h1-inicio {
+  font-family: var(--fonte-experiencia);
+  color: var(--cor0);
+  font-size: 30px;
+  margin-bottom: -5px;
+}
+p.p-inicio {
+  font-family: var(--fonte-experiencia2);
+  color: var(--cor2);
+
+}
+p.p-whats {
+  font-family: var(--fonte-experiencia2);
+  color: var(--cor3);
+  padding-right: 10px;
+}
+/*pagina principal - topico acomodacoes*/
+section.caixa-acomodacoes {
+  background-color: #eaebec;
+}
+div.caixa-acomodacoes {
+  
+  width: 40vw;
+  height: 15vh;
+  margin-top: 10px;
+  margin-left: 70px;
+  margin-right: 10px;
+}
+div.acomod-1 {
+  width: 120%;
+  display: flex;
+  
+  padding: 20px;
+  margin-left: 20px;
+  margin-right: 50px;
+}
+div.acomod-2 {
+  width: 120%;
+  display: flex;
+  
+  padding: 20px;
+  margin-left: 20px;
+  margin-right: 10px;
+}
+img.img-acomod {
+  margin: 15px;
+}
+/*pagina principal - topico Infraestrutura*/
+section.caixa-infra {
+  background-color: #6c757d;
+}
+div.caixa-infra {
+  
+  width: 40vw;
+  height: 15vh;
+  margin-top: 10px;
+  margin-left: 70px;
+  margin-right: 10px;
+}
+img.imagem-1-infra {
+  width: 25vw;
+  height: 50vh;
+  margin-top: 40px;
+  margin-right: 10px;
+}
+
+
+/*pagina principal - topico Servicos*/
+
+div.servicos {
+  display: flex;
+  justify-content: space-between;
+  /*margin-right: 70px;*/
+  margin-top: 15px;
+  
+  margin-left: 70px;
+  margin-right: 10px;
+  
+}
+div.caixa-servicos {
+  width: 40vw;
+  height: 12vh;
+  margin-top: 5px;
+  margin-left: 70px;
+  margin-right: 10px;
+}
+
+h1.h1-serv2 {
+  font-family: var(--fonte-experiencia);
+  color: var(--cor0);
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+img.imagem-2-infra {
+  width: 15vw;
+  height: 30vh;
+  margin-top: 40px;
+}
+
+div.color-servicos {
+  color: var(--cor3);
+}
+h1.h1-serv {
+  font-family: var(--fonte-experiencia);
+  color: var(--cor4);
+  font-size: 24px;
+  
+  margin-bottom: -5px;
+
+}
+
+p.p-serv {
+  font-family: var(--fonte-experiencia2);
+  color: var(--cor2);
+  margin-top: 10px;
+
+}
+img.imagem-1-serv {
+  width: 5vw;
+  height: 10vh;
+  margin-top: 10px;
+  margin-right: 10px;
+}
+
+div.bloco-serv {
+  width: 30vw;
+  height: 40vh;
+  padding: 20px 20px;
+  border: 0.5px solid #ddd;
+  border-radius: 10px;
+}
+/*pagina principal - topico Depoimentos*/
+
+div.caixa-depoi {
+  width: 40vw;
+  height: 80vh;
+  margin-top: 5px;
+  margin-left: 70px;
+  margin-right: 10px;
+}
+
+h2.h2-depoi {
+  font-family: var(--fonte-experiencia2);
+  color: #ffff;
+  font-size: 20px;
+}
+section.imagem {
+  background-color: rgb(53, 53, 53);
+  color: white;
+  box-shadow: inset 6px 6px 13px rgba(0, 0, 0, 0.479);
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+section.imagem > p {
+  display: inline-block;
+  padding: 5px;
+  /*faz uma caixa preta para compensar se parte da imagem for branca misturando c a letra de cor branca*/
+  background-color: rgba(0, 0, 0, 0.137);
+  text-shadow: 1px 1px 0px black;
+}
+section#img01 {
+  background-image: url(../img/praia/WhatsApp\ Image\ 2020-08-25\ at\ 17.30.31\ \(1\).jpeg);
+  background-position: right center;
+}
+footer {
+  background-color: #f4f4f4;
+  padding: 10px;
+  text-align: center;
+}
+
+section {
+  padding: 20px;
+}
+
+img {
+  width: 25%;
+}
+
+/* class reserva */
+.reservas {
+  background-color: #fffee9;
+  padding: 20px;
+  width: 30%;
+  font-family: "Georgia, Times, Times New Roman, serif";
+  margin: 10px auto;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.reservas fieldset {
+  border: 0px;
+}
+
+.reservas legend {
+  font-size: large;
+}
+
+.reservas label {
+  display: block;
+  margin-top: 10px;
+}
+
+.reservas input {
+  border: 0px;
+  height: 40px;
+  width: 100%;
+}
+
+/* class reserva submit */
+.reservas input[type="submit"] {
+  background-color: #8b704b;
+  color: #fff;
+  width: 100%;
+  margin-top: 10px;
+}
+
+/* Contato */
+
+.linha {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.coluna-50 {
+  width: 50%;
+  padding: 0px;
+  margin: 0px;
+}
+
+h2 {
+  color: #4b7e8b;
+  font-family: var(--fonte-experiencia);
+}
+
+.contato {
+  padding: 6vw;
+  text-align: justify;
+  position: relative;
+}
+
+.contato input {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 70%;
+  position: relative;
+  height: 35px;
+  border: none;
+  border-radius: 2px;
+  border-bottom: 2px solid #4b7e8b;
+  margin-bottom: 25px;
+  font-family: var(--fonte-experiencia2);
+}
+
+.contato textarea {
+  width: 350px;
+  height: 200px;
+  padding: 25px;
+}
+
+.fale_conosco {
+  margin-bottom: 50px;
+  padding: auto;
+  text-decoration: solid;
+}
+
+
+
+/* tela menor que 600Px */
+@media (max-width: 600px) {
+  main {
+    height: 20vmax;
+  }
+
+  div.experiencia {
+    margin: 0px;
+  }
+
+  div.caixa-experiencia {
+    margin: 0px;
+    width: 100%;
+    height: auto;
+  }
+
+  div.experiencia-imagem {
+    display: block;
+    margin-left: 10px;
+  }
+
+  img.imagem-1-exp,
+  img.imagem-2-exp {
+    width: 100%;
+    height: fit-content;
+
+    object-fit: cover;
+    margin: 0px;
+  }
+
+  reserva-whatsapp {
+    display: block;
+  }
+
+  .color-whats {
+    font-size: small;
+    font-weight: bold;
+  }
+
+  #reservas {
+    margin-right: 20px;
+  }
+  .reservas {
+    width: auto;
+  }
+}
+
+.gallery-container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 2vw;
+  padding: 0 2vw;
+}
+.gallery-items{
+  width: 340px;
+  height: 340px;
+  border: 10px solid #ffff;
+  box-shadow: 5px 5px 5px #0006;
+  flex-grow: 1;
+  transition: transform .5s linear;
+}
+
+.gallery-items img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.gallery-items :hover{
+  scale: (1.3);
+  border: 10px solid #ffff;
+  
+}
+
+footer {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  /* text-align: center; */
+  padding: 20px 0;
+}
+
+footer p,
+footer a {
+  color: var(--secondary-color);
+  font-size: 0.9rem;
+}
+
+footer h3,
+a {
+  color: var(--secondary-color);
+  margin-top: 0px;
+}
+
+.footer-columns {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+.footer-col {
+  flex: 1;
+  margin: 10px 15px;
+}
+
+.footer-col p {
+  margin-top: 0;
+}
+
+.footer-col ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.footer-col li {
+  margin: 5px 0;
+}
+
+
