@@ -189,7 +189,7 @@ p.p-inicio {
   color: var(--cor2);
 
 }
-p.p-whats {
+a.p-whats {
   font-family: var(--fonte-experiencia2);
   color: var(--cor3);
   padding-right: 10px;
