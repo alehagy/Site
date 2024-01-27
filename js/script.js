@@ -35,11 +35,7 @@ window.addEventListener("DOMContentLoaded", (event) => {
    <h3>Explore</h3>
    <ul>
    <li><a href="./">Início</a></li>
-   <li><a href="reservas.html">Reservas</a></li>
    <li><a href="contato.html">Contato</a></li>
-   <li><a href="cafe.html">Café da Manhã</a></li>
-   <li><a href="acomodacoes.html">Acomodações</a></li>
-    
    </ul>
    `;
       footerColumns.appendChild(secondCol);
@@ -53,6 +49,9 @@ window.addEventListener("DOMContentLoaded", (event) => {
    <p>+55 (73) 99855-9689</p>
    <p>pousadaobedemat@gmail.com</p>
    <p>insta, X, Facebook, Booking</p>
+   <p>
+    <a href="facebook.html" target="tela"><img src="img/logo-facebook.jpg" alt="Facebook"></a>
+  </p>
   <!-- Include the Google Translate script -->
   <div id="google_translate_element"></div>
    `;
